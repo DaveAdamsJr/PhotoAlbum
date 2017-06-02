@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.textfield.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserController">
+	<Button text="Logout" fx:id="logoutbutton"
+		AnchorPane.topAnchor="15"
+		AnchorPane.rightAnchor="25"/>
+
+	<Text text="Search:"
+		AnchorPane.topAnchor="50"
+		AnchorPane.leftAnchor="20"/>
+
+	<Text text="Start:"
+		AnchorPane.topAnchor="50"
+		AnchorPane.leftAnchor="90"/>
+	<DatePicker fx:id="datepicker1"
+		maxWidth="60"
+		AnchorPane.topAnchor="45"
+		AnchorPane.leftAnchor="125"/>
+	<Text text="End:"
+		AnchorPane.topAnchor="50"
+		AnchorPane.leftAnchor="200"/>
+	<DatePicker fx:id="datepicker2"
+		maxWidth="60"
+		AnchorPane.topAnchor="45"
+		AnchorPane.leftAnchor="240"/>
+	<Button text="Search by Date"
+		fx:id="datesearchbutton"
+		prefWidth="100"
+		AnchorPane.topAnchor="45"
+		AnchorPane.leftAnchor="310"/>
+
+	<Text text="Type:"
+		AnchorPane.topAnchor="80"
+		AnchorPane.leftAnchor="90"/>
+	<TextField fx:id="tagsearchbox1"
+		maxWidth="60"
+		AnchorPane.topAnchor="75"
+		AnchorPane.leftAnchor="125"/>
+	<Text text="Value:"
+		AnchorPane.topAnchor="80"
+		AnchorPane.leftAnchor="200"/>
+	<TextField fx:id="tagsearchbox2"
+		maxWidth="60"
+		AnchorPane.topAnchor="75"
+		AnchorPane.leftAnchor="240"/>
+	<Button id="tagsearchbutton" text="Search by Tag"
+		fx:id="tagsearchbutton"
+		prefWidth="100"
+		AnchorPane.topAnchor="75"
+		AnchorPane.leftAnchor="310"/>
+
+	<Text text="Albums"
+		AnchorPane.topAnchor="100"
+		AnchorPane.leftAnchor="20"/>
+	<TableView fx:id="table"
+		AnchorPane.topAnchor = "120"
+		AnchorPane.leftAnchor = "15"
+		AnchorPane.rightAnchor = "15"
+		AnchorPane.bottomAnchor = "92">
+		<columns>
+			<TableColumn fx:id="namecol" prefWidth="100" text="Name"/>
+			<TableColumn fx:id="numcol" prefWidth="68" text="# Photos"/>
+			<TableColumn fx:id="datecol1" prefWidth="150" text="Earliest Date"/>
+			<TableColumn fx:id="datecol2" prefWidth="150" text="Latest Date"/>
+		</columns>
+	</TableView>
+	<Button id="openalbumbutton" text="Open Selected Album"
+		fx:id="openalbumbutton"
+		AnchorPane.bottomAnchor="60"
+		AnchorPane.leftAnchor="30"/>
+	<Button id="deletealbumbutton" text="Delete Selected Album"
+		fx:id="deletealbumbutton"
+		AnchorPane.bottomAnchor="60"
+		AnchorPane.rightAnchor="30"/>
+
+	<Text text="New Album Name:"
+		AnchorPane.bottomAnchor="25"
+		AnchorPane.leftAnchor="20"/>
+	<TextField id="newalbumbox" fx:id="newalbumbox"
+		maxWidth="80"
+		AnchorPane.bottomAnchor="20"
+		AnchorPane.leftAnchor="125"/>
+	<Button id="createalbumbutton" text="Create New Album"
+		fx:id="createalbumbutton"
+		AnchorPane.bottomAnchor="20"
+		AnchorPane.leftAnchor="220"
+		AnchorPane.rightAnchor="20"/>
+</AnchorPane>
+

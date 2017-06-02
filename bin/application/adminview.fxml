@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.textfield.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminController">
+	<Button text="Logout" fx:id="logoutbutton"
+		AnchorPane.topAnchor="10"
+		AnchorPane.rightAnchor="25"/>
+	<Text text="Users"
+		AnchorPane.topAnchor="19"
+		AnchorPane.leftAnchor="20"/>
+	<TableView fx:id="table"
+		AnchorPane.topAnchor = "40"
+		AnchorPane.leftAnchor = "15"
+		AnchorPane.rightAnchor = "15"
+		AnchorPane.bottomAnchor = "100">
+		<columns>
+		<TableColumn fx:id="tcol"
+			prefWidth="302"
+			text="Username" />
+		</columns>
+	</TableView>
+	<Button id="deleteuserbutton" text="Delete Selected User"
+		fx:id="deleteuserbutton"
+		AnchorPane.bottomAnchor="60"
+		AnchorPane.leftAnchor="100"/>
+	<Text text="New Username:"
+		AnchorPane.bottomAnchor="25"
+		AnchorPane.leftAnchor="20"/>
+	<TextField id="newusernamebox" fx:id="newusernamebox"
+		maxWidth="80"
+		AnchorPane.bottomAnchor="20"
+		AnchorPane.leftAnchor="110"/>
+	<Button id="createuserbutton" text="Create New user"
+		fx:id="createuserbutton"
+		AnchorPane.bottomAnchor="20"
+		AnchorPane.leftAnchor="210"
+		AnchorPane.rightAnchor="20"/>
+</AnchorPane>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AlbumController">
+	
+	<Button text="Close Album"
+		fx:id="closealbumbutton"
+		prefWidth="100"
+		AnchorPane.topAnchor="15"
+		AnchorPane.rightAnchor="15"/>
+	
+	<Button fx:id="backbutton" 
+	text="&lt;-"
+	AnchorPane.topAnchor="100"
+	AnchorPane.leftAnchor="25" />
+	<ImageView fx:id="imgView"
+	AnchorPane.topAnchor="20"
+	AnchorPane.leftAnchor="95"
+	AnchorPane.rightAnchor="70"
+	fitHeight="160"
+	fitWidth="180">
+	</ImageView>
+	<Button fx:id="fwdbutton" 
+	text="-&gt;"
+	AnchorPane.topAnchor="100"
+	AnchorPane.leftAnchor="310" />
+	
+	<Text text="Date:"
+	AnchorPane.leftAnchor="25"
+	AnchorPane.topAnchor="195"/>
+	<TextField fx:id="datebox" 
+	prefWidth="210"
+	AnchorPane.topAnchor="190"
+	AnchorPane.leftAnchor="90"/>
+	
+	<Text text="Tags:"
+	AnchorPane.leftAnchor="25"
+	AnchorPane.topAnchor="228"/>
+	<TextField fx:id="tagbox" 
+	prefWidth="210"
+	AnchorPane.topAnchor="223"
+	AnchorPane.leftAnchor="90"/>
+	
+	
+	<Text text="Add Tag:"
+	AnchorPane.leftAnchor="25"
+	AnchorPane.topAnchor="260"/>
+	<Text text="Type:"
+		AnchorPane.topAnchor="260"
+		AnchorPane.leftAnchor="90"/>
+	<TextField fx:id="addtagbox1"
+		maxWidth="60"
+		AnchorPane.topAnchor="255"
+		AnchorPane.leftAnchor="125"/>
+	
+	<Text text="Value:"
+		AnchorPane.topAnchor="260"
+		AnchorPane.leftAnchor="200"/>
+	<TextField fx:id="addtagbox2"
+		maxWidth="60"
+		AnchorPane.topAnchor="255"
+		AnchorPane.leftAnchor="240"/>
+	<Button text="Add Tag"
+		fx:id="addtagbutton"
+		prefWidth="80"
+		AnchorPane.topAnchor="255"
+		AnchorPane.leftAnchor="310"
+		AnchorPane.rightAnchor="15"/>
+	
+	
+	<TableView fx:id="table" 
+		AnchorPane.topAnchor="300" 
+		AnchorPane.bottomAnchor="100"
+		AnchorPane.leftAnchor="15"
+		prefWidth = "340"
+		prefHeight = "250">
+		<columns>
+		
+			<TableColumn fx:id="photocol" prefWidth="120" text="Photo"/>
+			<TableColumn fx:id="captcol" prefWidth="220" text="Caption"/>
+		</columns></TableView>
+	
+	<Button fx:id="addphotobutton" text="Add Photo" 
+	prefWidth="150"
+	AnchorPane.bottomAnchor="55"
+	AnchorPane.leftAnchor="20"/>
+	<Button fx:id="deletephotobutton" text="Delete Selected Photo"
+	prefWidth="150"
+	AnchorPane.bottomAnchor="55"
+	AnchorPane.leftAnchor="200"
+	/>
+	<Button fx:id="movephotobutton" text="Move Selected Photo"
+	prefWidth="150"
+	AnchorPane.bottomAnchor="20"
+	AnchorPane.leftAnchor="20"
+	/>
+	<Button fx:id="copyphotobutton" text="Copy Selected Photo"
+	prefWidth="150"
+	AnchorPane.bottomAnchor="20"
+	AnchorPane.leftAnchor="200"
+	/>
+</AnchorPane>
+
